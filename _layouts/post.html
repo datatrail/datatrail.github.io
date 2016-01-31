@@ -1,0 +1,15 @@
+{% include main_header.html %}
+
+    <div class="wrapper">
+      <div class="row">
+          <img src="{{ site.url }}/static/img/logo.png" class="img-responsive center-block" width="50%">
+      </div>
+      <div class="row">
+        <div class="blogpost">
+        	<a href="/index.html">&#8592; Home</a>
+        	{{ content }}
+        	{% include disqus.html %}
+        </div>
+      </div>
+    </div>
+  {% include main_footer.html %}
